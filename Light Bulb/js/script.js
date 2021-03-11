@@ -28,6 +28,7 @@ function quebrou() {
 }
 
 function ligouDesligou() {
+    if ( !isQuebrada() )
     if (ligarDesligar.textContent == 'Turn On') {
         ligou()
         ligarDesligar.textContent = 'Turn Of'
